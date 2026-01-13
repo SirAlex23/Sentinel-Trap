@@ -1,0 +1,157 @@
+:root {
+  --primary-blue: #004080;
+  --secondary-blue: #002f6c;
+  --dark-bg: #121212;
+  --card-bg: #1e1e1e;
+  --text-gray: #b0b0b0;
+  --accent-blue: #007bff;
+}
+
+body {
+  background-color: var(--dark-bg);
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header Corporativo */
+.header {
+  background: linear-gradient(
+    90deg,
+    var(--secondary-blue),
+    var(--primary-blue)
+  );
+  padding: 25px;
+  text-align: center;
+  border-bottom: 4px solid var(--accent-blue);
+  margin-bottom: 30px;
+}
+
+.header-logo {
+  width: 45px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.status-badge {
+  background-color: #28a745;
+  color: white;
+  padding: 6px 18px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+/* Tarjetas de Contenido */
+.main-card {
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 25px;
+  border: 1px solid #333;
+}
+
+h2,
+h3 {
+  color: var(--accent-blue);
+  margin-top: 25px;
+}
+
+.step-img {
+  width: 100%;
+  border-radius: 10px;
+  margin: 20px 0;
+  border: 1px solid #444;
+  transition: transform 0.3s ease;
+}
+
+.step-img:hover {
+  transform: scale(1.02);
+}
+
+.code-block {
+  background: #000;
+  padding: 15px;
+  border-radius: 8px;
+  color: #00ff00;
+  font-family: "Courier New", monospace;
+  border-left: 5px solid var(--accent-blue);
+}
+
+.text-muted-small {
+  font-size: 0.8rem;
+  color: var(--text-gray);
+}
+
+/* Sidebar y Botones */
+.sidebar-btn {
+  width: 100%;
+  margin-bottom: 15px;
+  font-weight: bold;
+  padding: 12px;
+}
+
+.author-links {
+  border-top: 1px solid #444;
+  padding-top: 15px;
+  margin-top: 15px;
+}
+
+.author-links a {
+  color: var(--accent-blue);
+  text-decoration: none;
+}
+
+.footer {
+  text-align: center;
+  padding: 30px;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* --- RESPONSIVE DESIGN PARA MÓVILES --- */
+
+@media (max-width: 768px) {
+  .header {
+    padding: 15px;
+  }
+
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  .main-card {
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+
+  .step-img {
+    margin: 10px 0;
+    border-radius: 5px;
+  }
+
+  .code-block {
+    font-size: 0.85rem;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 12px;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+  h6 {
+    font-size: 1rem;
+  }
+
+  .sidebar-btn {
+    padding: 15px;
+    font-size: 1rem;
+  }
+
+  .row.mt-4 > div {
+    margin-bottom: 20px;
+  }
+}
